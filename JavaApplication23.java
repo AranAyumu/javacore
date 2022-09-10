@@ -83,7 +83,7 @@ public class JavaApplication23 {
         }
 
         System.out.println("Tong so truong hop la: " + wayToClimb);
-
+     // chi beo
     }
 }
 }
