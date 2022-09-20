@@ -11,6 +11,7 @@ public static void main(String[] args) {
 		spt[i] = ' ' ;
 		
 	}
+	\\tic-tac-toe game with one-dimensional array
 	cocaro.caroMap();
 	do {
 		int n = sc.nextInt();
