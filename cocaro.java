@@ -2,7 +2,7 @@ package caro;
 
 import java.util.Scanner;
 
-public class cocaro {
+public class Cocaro {
 	static char[] spt = new char[9];
 	static int k = 0;
 public static void main(String[] args) {
@@ -21,18 +21,18 @@ public static void main(String[] args) {
 		else{
 		spt[n-1]  = cocaro.turn();
 		}
-		cocaro.checkWinorTie();
+		Cocaro.checkWinorTie();
 		if(cocaro.checkWinorTie() == 1) {
 			
 		}
-		cocaro.caroMap();
-		cocaro.checkWinorTie();
+		Cocaro.caroMap();
+		Cocaro.checkWinorTie();
 		if(checkWinorTie() == 1) {
 			break;
 		}
 		k++;
 	}while(k<9);
-	cocaro.displayWinOrTie();
+	Cocaro.displayWinOrTie();
 }
 	public static void caroMap() {
 	for(int i = 0; i < 9; i = i+3) {
