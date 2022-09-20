@@ -19,10 +19,10 @@ public static void main(String[] args) {
 			k--;
 		}
 		else{
-		spt[n-1]  = cocaro.turn();
+		spt[n-1]  = Cocaro.turn();
 		}
 		Cocaro.checkWinorTie();
-		if(cocaro.checkWinorTie() == 1) {
+		if(Cocaro.checkWinorTie() == 1) {
 			
 		}
 		Cocaro.caroMap();
