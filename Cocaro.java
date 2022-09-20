@@ -58,7 +58,7 @@ public static void main(String[] args) {
 		}
 	}
 	public static int checkWinorTie() {
-		if(spt[0] == spt[1] && spt[0] == spt[2] && spt[0] != ' '  || spt[0] == spt[3] && spt[0] == spt[6] && spt[0] != ' ' || spt[3] == spt[4] && spt[3] == spt[5] && spt[3] != ' ' || spt[6] == spt[8] && spt[6] == spt[7] && spt[6] != ' ' || spt[8] == spt[5] && spt[8] == spt[2] && spt[8] != ' ' || spt[0] == spt[4] && spt[0] == spt[8] && spt[0] != ' ' ||  spt[2] == spt[4] && spt[2] == spt[6] && spt[2] != ' ') {
+		if(spt[0] == spt[1] && spt[0] == spt[2] && spt[0] != ' '  || spt[0] == spt[3] && spt[0] == spt[6] && spt[0] != ' ' || spt[3] == spt[4] && spt[3] == spt[5] && spt[3] != ' ' || spt[6] == spt[8] && spt[6] == spt[7] && spt[6] != ' ' || spt[8] == spt[5] && spt[8] == spt[2] && spt[8] != ' ' || spt[0] == spt[4] && spt[0] == spt[8] && spt[0] != ' ' ||  spt[2] == spt[4] && spt[2] == spt[6] && spt[2] != ' ' ||  spt[1] == spt[4] && spt[1] == spt[7] && spt[1] != ' ') {
 		return 1;
 		}
 		else {
