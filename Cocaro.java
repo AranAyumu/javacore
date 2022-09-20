@@ -12,7 +12,7 @@ public static void main(String[] args) {
 		
 	}
 	//tic-tac-toe game with one-dimensional array
-	cocaro.caroMap();
+	Cocaro.caroMap();
 	do {
 		int n = sc.nextInt();
 		if(spt[n-1] != ' ' ) {
