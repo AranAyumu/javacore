@@ -31,8 +31,14 @@ public static void main(String[] args) {
 		}
 		k++;
 	}while(k<9);
+	if(checkWinorTie() == 1) {
 	System.out.print(p + " chien thang");
-}
+	}
+	if(checkWinorTie() != 1) {
+		System.out.print("tran dau hoa");
+	}
+	}
+
 	public static void caroMap() {
 	for(int i = 0; i < 9; i = i+3) {
 		System.out.println(spt[i] + "|"+  spt[i+1] +  "|" + spt[i+2]  );
