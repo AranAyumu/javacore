@@ -6,6 +6,7 @@ public class Cocaro {
 	static char[] spt = new char[9];
 	static int k = 0;
 public static void main(String[] args) {
+	char  p;
 	Scanner sc = new Scanner(System.in);
 	for(int i = 0; i < spt.length; i++) {
 		spt[i] = ' ' ;
@@ -21,18 +22,16 @@ public static void main(String[] args) {
 		else{
 		spt[n-1]  = Cocaro.turn();
 		}
-		Cocaro.checkWinorTie();
-		if(Cocaro.checkWinorTie() == 1) {
-			
-		}
+		
 		Cocaro.caroMap();
+		p = spt[n-1];
 		Cocaro.checkWinorTie();
 		if(checkWinorTie() == 1) {
 			break;
 		}
 		k++;
 	}while(k<9);
-	Cocaro.displayWinOrTie();
+	System.out.print(p + " chien thang");
 }
 	public static void caroMap() {
 	for(int i = 0; i < 9; i = i+3) {
@@ -47,14 +46,6 @@ public static void main(String[] args) {
 		}
 		else{
 			return 'o';
-		}
-	}
-	public static void displayWinOrTie() {
-		if(spt[0] == spt[1] && spt[0] == spt[2]  || spt[0] == spt[3] && spt[0] == spt[6] || spt[3] == spt[4] && spt[3] == spt[5] || spt[6] == spt[8] && spt[6] == spt[7] || spt[8] == spt[5] && spt[8] == spt[2] || spt[0] == spt[4] && spt[0] == spt[8] ||  spt[2] == spt[4] && spt[2] == spt[6]) {
-			System.out.print(spt[0] + " chien thang");
-		}
-		else {
-			System.out.print("tran dau hoa");
 		}
 	}
 	public static int checkWinorTie() {
